@@ -19,7 +19,7 @@ body {
   color: #000;
   font-size: 16px;
   line-height: normal;
-  min-width: 1350px;
+  min-width: 1250px;
   
 }
 .start__top {
@@ -34,18 +34,17 @@ body {
   top: 696px;
   background-image: url(../img/background-wave.png);
   width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  height: 19%;
 }
 .header__top-inner {
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
+  
 }
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .header__logo {
   display: flex;
@@ -486,9 +485,12 @@ font-weight: bold;
 @media (max-width: 1024px) {
   .container {
     margin: 0 auto;
-    min-width: 1024px;
+    max-width: 900px;
     padding: 0 65
   }
+  .start__top::after {
+    display: none;
+}
   .main__legs {
     display: none;
 }
@@ -523,7 +525,7 @@ font-weight: bold;
   padding-left: 0;
 }
 .info__item-text {
-  font-size: 25px;
+  font-size: 33px;
   line-height: 18px;
   color: #666666;
   line-height: 1;
@@ -571,8 +573,13 @@ font-weight: bold;
 }
 @media (max-width: 767px) {
   .container {
-    max-width: none;
+    max-width: 560px;
+    margin: 0 auto;
     padding: 10px;
+  }
+  body{
+    max-width: 800px;
+    margin: 0 auto;
   }
   .title__small {
     font-size: 30px;
@@ -587,9 +594,7 @@ font-weight: bold;
   font-size: 26px;
   text-align: left;
 }
-.about__danger{
-  padding: 0 20px;
-}
+
 .static__title {
   font-size: 32px;
   text-align: center;
@@ -597,10 +602,31 @@ font-weight: bold;
   border: 3px solid #f4d3bb;
   border-radius: 10px;
 }
+.tablet__box{
+
+}
+.pills_product-left {
+  display: none;
+}
+.description__product{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.title_product {
+  font-size: 74px;
+  line-height: 1;
+  font-weight: 900;
+  color: #383334;
+  margin-bottom: 36px;
+}
+.description__product ul{
+  font-size: 32px;
+}
 }
 @media (max-width: 425px) {
   .container {
-    max-width: none;
+    max-width: 425px;
     padding: 10px;
   }
   .logo__name {
@@ -626,11 +652,11 @@ font-weight: bold;
 }
 .description__product {
   position: di;
-  left: 93px;
-  top: 37px;
+  left: 186px;
+  top: 40px;
   display: flex;
 }.main__all {
-   display: inherit;
+   
 }
 .title_product {
   font-size: 97px;
@@ -642,6 +668,11 @@ font-weight: bold;
 }
 .start__top::after {
   display: none;
+}
+.description__product {
+ display: block
+  /* top: 40px; */
+  /* display: flex; */
 }
 }
 /* Сорри не успел доделать мобайл */
